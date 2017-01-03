@@ -20,4 +20,4 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environm
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environment" /v ProductVersion /T REG_SZ /d 17.0.0.611 /F
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environment" /v DataRoot /T REG_SZ /d "C:\\ProgramData\\Kaspersky Lab\\AVP17.0.0" /F
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environment" /v ProductStatus /T REG_SZ /d release /F
-msg * Now you can re-run your Kaspersky Trial Resetter again and re-install KIS.
+msg * Now you can re-run your Kaspersky Trial Resetter 5.1.0.29 again and re-install KIS.
