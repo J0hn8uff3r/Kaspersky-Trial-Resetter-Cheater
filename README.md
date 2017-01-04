@@ -9,4 +9,5 @@ Trial Resetter (v5.1.0.29) from Collective Intelligence Russian Team and let you
 # Legal warning: Disclaimer
 
 This script is totally legal, it just simulates an original Kaspersky installation to cheat the trial resetter.
+
 If you need the trial resetter from Collective Intelligence Team, use Google :D
