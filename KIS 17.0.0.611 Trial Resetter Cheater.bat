@@ -12,6 +12,9 @@ exit /b
 
 FOR %%I IN ("%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe") DO SET avpsize=%%~zI
 
+REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v LastLicenseNotificationTime /T REG_SZ /d 1500000000 /F
+REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v HidePromo /T REG_SZ /d 1 /F
+	
 IF [%avpsize%] NEQ [] (
     msg * Please, uninstall Kaspersky Internet Security before running this script.
 ) ELSE (
@@ -25,9 +28,6 @@ IF [%avpsize%] NEQ [] (
 	REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environment" /v ProductVersion /T REG_SZ /d 17.0.0.611 /F
 	REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environment" /v DataRoot /T REG_SZ /d "C:\\ProgramData\\Kaspersky Lab\\AVP17.0.0" /F
 	REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\environment" /v ProductStatus /T REG_SZ /d release /F
-
-	REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v LastLicenseNotificationTime /T REG_SZ /d 1500000000 /F
-	REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v HidePromo /T REG_SZ /d 1 /F
 
 	msg * Done, now you can re-run your Kaspersky Trial Resetter 5.1.0.29 again and re-install KIS.
 )
