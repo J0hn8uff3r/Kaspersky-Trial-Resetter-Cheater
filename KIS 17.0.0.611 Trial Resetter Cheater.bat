@@ -10,10 +10,10 @@ del "%tmp%\cmdUAC.vbs"
 exit /b
 :noUAC
 
-FOR %%I IN ("%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe") DO SET avpsize=%%~zI
-
 REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v LastLicenseNotificationTime /T REG_SZ /d 1500000000 /F
 REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v HidePromo /T REG_SZ /d 1 /F
+
+FOR %%I IN ("%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe") DO SET avpsize=%%~zI
 	
 IF [%avpsize%] NEQ [] (
     msg * Please, uninstall Kaspersky Internet Security before running this script.
