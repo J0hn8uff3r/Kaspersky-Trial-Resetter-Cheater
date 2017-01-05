@@ -13,7 +13,7 @@ exit /b
 FOR %%I IN ("%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe") DO SET avpsize=%%~zI
 
 IF [%avpsize%] NEQ [] (
-    msg * Please, remember that you must uninstall Kaspersky Internet Security before running this script.
+    msg * Please, uninstall Kaspersky Internet Security before running this script.
 ) ELSE (
     TYPE NUL >"%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe"
 
