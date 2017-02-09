@@ -1,6 +1,6 @@
 # Kaspersky-Trial-Resetter-Cheater
 
-![alt tag]()
+![alt tag](https://i.snag.gy/ZKqRuw.jpg)
 
 Cheats the last Kaspersky Antivirus Trial Resetter to reset trial period if your 30 days trial period has expired and you can't disable self protection from the antivirus GUI.
 
