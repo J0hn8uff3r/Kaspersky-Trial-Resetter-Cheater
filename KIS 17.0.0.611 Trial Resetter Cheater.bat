@@ -13,12 +13,14 @@ exit /b
 REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v LastLicenseNotificationTime /T REG_SZ /d 1500000000 /F
 REG ADD "HKEY_CURRENT_USER\Software\KasperskyLab\AVP17.0.0" /v HidePromo /T REG_SZ /d 1 /F
 
+IF NOT EXIST "%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0" MKDIR "%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0"
+
 FOR %%I IN ("%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe") DO SET avpsize=%%~zI
 	
 IF [%avpsize%] NEQ [] (
     msg * Please, uninstall Kaspersky Internet Security before running this script.
 ) ELSE (
-    TYPE NUL >"%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe"
+    TYPE NUL > "%ProgramFiles(x86)%\Kaspersky Lab\Kaspersky Internet Security 17.0.0\avp.exe"
 
 	REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\settings" /v EnableSelfProtection /T REG_DWORD /d 00000000 /F
 	REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KasperskyLab\AVP17.0.0\settings\def" /v EnableSelfProtection /T REG_DWORD /d 00000000 /F
