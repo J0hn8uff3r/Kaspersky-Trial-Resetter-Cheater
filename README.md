@@ -2,7 +2,7 @@
 
 ![alt tag](https://i.snag.gy/ZKqRuw.jpg)
 
-# Follow this steps in order to reset it
+# Follow this steps in order to reset KIS
 
 1 - Uninstall Kaspersky
 
