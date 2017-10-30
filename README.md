@@ -20,7 +20,7 @@ Cheats the last Kaspersky Antivirus Trial Resetter to reset trial period if your
    1. 2017 (v17.0.0.611)
    1. 2018 (v18.0.0.405)
 
-1. Trial Resetter versions:
+1. Trial Resetter versions cheated:
    1. 5.1.0.29
    1. 5.1.0.41
 
