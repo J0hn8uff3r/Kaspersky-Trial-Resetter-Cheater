@@ -1,5 +1,7 @@
 # Kaspersky-Trial-Resetter-Cheater
 
+Once the trial reset period expires, the self-defense protection check it's inoperative and you can't disable it cuz it's still running and you can't use the trial resetter, this tool cheats the trial resetter simulating a Kaspersky Antivirus Installation in order to reset the trial period once you uninstall it (uninstalled the self-protection stop working).
+
 ![alt tag](https://i.snag.gy/ZKqRuw.jpg)
 
 # Follow this steps in order to reset KIS
